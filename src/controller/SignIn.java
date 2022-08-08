@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -30,12 +31,15 @@ public class SignIn {
       }
       // file writer를 통해 새로 가입된 회원 정보 기록
       try {
-         File file = new File("C:/JavaMiniProject/client.txt");
+         // File file = new File("C:/JavaMiniProject/client.txt");
+         FileWriter file = new FileWriter("C:/JavaMiniProject/client.txt");
+         file.write(instance_clients.toString() + System.lineSeparator());
+         file.close();
 
       } catch (Exception e) {
-         System.err.println("죄송합니다 회원가입에 실패했습니다 :( ");
+         System.err.println("ERROR ! 회원가입에 실패했습니다 :( ");
       }
-      System.out.println("축하드립니다 회원가입에 성공했습니다 :)");
+      System.out.println("축하드립니다 ! 회원가입에 성공했습니다 :)");
 
    }
 

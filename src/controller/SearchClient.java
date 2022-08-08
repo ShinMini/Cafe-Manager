@@ -1,9 +1,10 @@
 package controller;
 
-import model.Clients;
-
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import model.Clients;
 
 public class SearchClient {
    static Scanner sc = new Scanner(System.in);
@@ -18,7 +19,7 @@ public class SearchClient {
       Clients case2Client = SearchClientsID(case2InputID);
 
       if (case2Client != null) { // 찾으려는 회원 정보가 있는경우.
-         if (case2Client.getClientName.equals(case2InputName)) {
+         if (case2Client.getClientName().equals(case2InputName)) {
             System.out.println(case2Client.getClientName() + "님의 회원정보");
             System.out.println("아이디: [" + case2Client.getClientID() + "]");
             System.out.println("비밀번호: [" + case2Client.getClientPWD() + "]");
@@ -30,6 +31,16 @@ public class SearchClient {
 
    public static Clients SearchClientsID(String clientID) {
       // file reader를 통해 회원정보가 들어있는 배열 가져온다 가정 -> ArrayList<Clients>
+      try {
+         FileReader reader = new FileReader("C:\\Java_Mini_Project\\file.txt")
+
+         int ch;
+         while ((ch = reader.read()) != -1) {
+            System.out.print((char) ch);
+         }
+      } catch (Exception e) {
+         System.err.println(e);
+      }
       ArrayList<Clients> clientsInfo = new ArrayList<Clients>();
       Clients TempClient = null;
 
