@@ -52,7 +52,9 @@ public class Clients {
 ​
 	/** 고객 등급 **/
 		// 고객 등급에 따른 각종 혜택 마케팅
-	private String clientGrade;	
+	private String clientGrade;
+
+	public Object getClientName;	
 	
 /** 아이디어 **/
 //	/** 총 주문 회수 **/
