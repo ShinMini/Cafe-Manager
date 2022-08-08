@@ -61,6 +61,9 @@ public class CafeMenu {
     public void setMenuCalorie(String menuCalorie) {
         this.menuCalorie = menuCalorie;
     }
+   public Object getCafeMenuName() {
+      return null;
+   }
     
     
     
