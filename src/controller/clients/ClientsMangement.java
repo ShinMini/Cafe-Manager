@@ -1,5 +1,6 @@
 package controller.clients;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -13,7 +14,7 @@ public class ClientsMangement {
     ClientsSearchModel instance = ClientsSearchModel.getInstance();
     ArrayList<Clients> allClientsList = instance.getClientsList();
 
-    public void reqResClients(int reqNo) {
+    public void reqResClients(int reqNo) throws IOException {
         /**
          * 로그인 로직
          */

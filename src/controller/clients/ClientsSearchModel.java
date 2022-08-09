@@ -1,10 +1,9 @@
 package controller.clients;
 
-​
 
 import java.util.ArrayList;
 
-import model.Clients;​
+import model.Clients;
 
 public class ClientsSearchModel {
    private static ClientsSearchModel instance = new ClientsSearchModel();
@@ -14,10 +13,7 @@ public class ClientsSearchModel {
 
    /** 모든 고객 instance */
 
-   ​
-
-   private ClientsSearchModel() {
-   }​
+   public ClientsSearchModel() {}
 
    public static ClientsSearchModel getInstance() {
       return instance;
@@ -40,7 +36,7 @@ public class ClientsSearchModel {
 	      // file reader를 통해 회원정보가 들어있는 배열 가져온다 가정 -> ArrayList<Clients>
 	      ArrayList<Clients> clientsInfo = new ArrayList<Clients>();
 	      Clients TempClient = null;
-​
+
 	      for (Clients client : clientsInfo) {
 	         if (client.getClientID().equals(clientID)) {
 	            TempClient = client;
