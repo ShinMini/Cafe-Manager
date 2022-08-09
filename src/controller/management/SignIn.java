@@ -5,7 +5,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import controller.clients.SearchClient;
 import controller.feature.ConsoleController;
 import controller.feature.PrintFunctions;
 import model.Clients;

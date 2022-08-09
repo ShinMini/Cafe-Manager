@@ -1,4 +1,4 @@
-package controller.clients;
+package controller.management;
 
 import java.io.FileReader;
 import java.util.ArrayList;

@@ -8,6 +8,5 @@ import model.Clients;
 public class StartView {
 	public static void main(String [] args) {
 
-		s.reqRes(0);
 	}
 }oller}

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import controller.management.Login;
+import controller.management.SearchClient;
 import controller.management.SignIn;
 import model.Clients;
 

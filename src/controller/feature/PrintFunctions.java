@@ -3,8 +3,8 @@ package controller.feature;
 import java.io.IOException;
 import java.util.Scanner;
 
-import controller.clients.SearchClient;
 import controller.management.Login;
+import controller.management.SearchClient;
 import controller.management.SignIn;
 
 public class PrintFunctions {
