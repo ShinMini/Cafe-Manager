@@ -1,6 +1,5 @@
 package view;
 
-
 import controller.SearchModel;
 import controller.SelectModel;
 import model.CafeMenu;
@@ -11,4 +10,4 @@ public class StartView {
 
 		s.reqRes(0);
 	}
-}
+}oller}
