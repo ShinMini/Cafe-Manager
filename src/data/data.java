@@ -16,6 +16,6 @@ public class data {
 		// CafeMenu menu1 = new CafeMenu("Americano", 4000);
 		// CafeMenu menu2 = new CafeMenu("Latte", 5000);
 
-		instance.cafeMenuInsert(menu1);
-		instance.cafeMenuInsert(menu2);
+		// instance.cafeMenuInsert(menu1);
+		// instance.cafeMenuInsert(menu2);
 }
