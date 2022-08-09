@@ -9,7 +9,7 @@ import model.Clients;
 public class SearchClient {
    static Scanner sc = new Scanner(System.in);
 
-   public static void FindID() {
+   public static void FindClients() {
       System.out.println("찾으시는 회원의 아이디를 입력해주세요: ");
       String case2InputID = sc.nextLine();
 
@@ -30,9 +30,12 @@ public class SearchClient {
       System.out.println("아무 키를 입력해 돌아가기");
       sc.next();
    }
+   public static void CheckClient(Clients client){
+
+   }
 
    // id가 중복된 경우 해당 client객체반환 중복되지않은경우 null값 반환
-   public static Clients SearchClientsID(String clientID) {
+   public static Clients FindID(String clientID) {
       // file reader를 통해 회원정보가 들어있는 배열 가져온다 가정 -> ArrayList<Clients>
       try {
          FileReader reader = new FileReader("C:\\Java_Mini_Project\\file.txt");

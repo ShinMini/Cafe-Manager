@@ -20,16 +20,17 @@ public class SignIn {
       instance_clients.setClientsID(Request_input("아이디"));
       // instance_clients.setClientsID("유저가입력한 아이디");
 
-      if (SearchClient.SearchClientsID(instance_clients.getClientID()) != null) { // 중복임
+      if (SearchClient.FindID(instance_clients.getClientID()) != null) { // 중복임
          PrintFunctions.print_sginup_request(true); // 중복 표기 해준채 request print 함수 호출
          return;
       } else {
          instance_clients.setClientsPWD(Request_input("비밀번호"));
          // conver int type
-         instance_clients.setClientsAge(
-               (Request_input("비밀번호").charAt(0) - '0'));
-         instance_clients.setClientsAdrres(Request_input("비밀번호"));
-         instance_clients.setClientsBirthday(Request_input("비밀번호"));
+         System.out.println("나이를 입력해주세요");
+         int tempAge = sc.nextInt();
+         instance_clients.setClientsAge(tempAge);
+         instance_clients.setClientsAdrres(Request_input("주소"));
+         instance_clients.setClientsBirthday(Request_input("생일"));
          instance_clients.setClientsGrade("D"); // D등급부터 시작
       }
       // file writer를 통해 새로 가입된 회원 정보 기록

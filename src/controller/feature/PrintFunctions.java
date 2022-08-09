@@ -39,7 +39,7 @@ public class PrintFunctions {
             SignIn.signIn();
 
             break;
-         case 3: // 프로그램 종료 화면 출력
+         case 3: // 아이디 비밀번호 찾기
             SearchClient.FindID();
 
             break;

@@ -20,7 +20,7 @@ public class ClientsMangement {
         } else if (reqNo == 2) { // 회원가입
             SignIn.signIn();
         } else if (reqNo == 3) { // 아이디 비밀번호 찾기
-            SearchClient.FindID();
+            SearchClient.FindClients();
 
         } else if (reqNo == 4) { // return home
             System.out.println("홈으로 돌아갑니다.");
