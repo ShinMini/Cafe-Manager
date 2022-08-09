@@ -1,13 +1,13 @@
 package view;
 
-import controller.SearchModel;
-import controller.SelectModel;
-import model.CafeMenu;
-import model.Clients;
+import java.io.IOException;
+
+import controller.feature.PrintFunctions;
 
 public class StartView {
-	public static void main(String [] args) {
+	public static void main(String [] args) throws IOException {
 
-		s.reqRes(0);
+		PrintFunctions.print_sginup_request(false);
+
 	}
-}oller}
+}

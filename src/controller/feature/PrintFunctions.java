@@ -3,9 +3,10 @@ package controller.feature;
 import java.io.IOException;
 import java.util.Scanner;
 
-import controller.clients.SearchClient;
 import controller.management.Login;
+import controller.management.SearchClient;
 import controller.management.SignIn;
+import model.Clients;
 
 public class PrintFunctions {
    public static Scanner sc = new Scanner(System.in);
@@ -18,10 +19,10 @@ public class PrintFunctions {
          System.out.println("## 해당 아이디값이 이미 존재합니다 \n\n##");
       }
       System.out.println("###############################");
-      System.out.println("### 1. 로그인 ###\n");
-      System.out.println("### 2. 회원가입 ###\n");
-      System.out.println("### 3. 아이디 비밀번호 찾기 ###\n");
-      System.out.println("### 4. 프로그램 종료 ###\n");
+      System.out.println("### 1. Login ###\n");
+      System.out.println("### 2. Sign up###\n");
+      System.out.println("### 3. find ID password ###\n");
+      System.out.println("### 4. Exit process ###\n");
       System.out.println("###############################");
 
       String input_option = sc.next();
@@ -38,8 +39,8 @@ public class PrintFunctions {
             SignIn.signIn();
 
             break;
-         case 3: // 프로그램 종료 화면 출력
-            SearchClient.FindID();
+         case 3: // 아이디 비밀번호 찾기
+            SearchClient.FindClients();
 
             break;
          case 4: // 프로그램 종료 화면 출력
@@ -52,8 +53,14 @@ public class PrintFunctions {
             break;
       }
    }
+   // 규리님이 완성해보셔용
+   public static void print_success_login(Clients client){
+      // 안녕
+      // select(client)~~
+      // sys.println(client.getClientNAme() 고객님 안ㄴ여하세요)
 
-   // user 1. '1' '1' 58 -'0' 57
+   }
+
    public static int OptionChecker(String case1_option) { // 정상적인 숫자가 아닌경우 -1반환
       char check_option = case1_option.charAt(0); // 문자열 첫번째 글자 가져옴
 

@@ -8,17 +8,13 @@
 package model;
 public class CafeMenu {
     /** 카페 메뉴 종류 **/
-    /** 메뉴 카테코리 **/
-    private String menuCategory;
+    private String menuCategory; /** 메뉴 카테코리 **/
     
-    /** 메뉴 이름 **/
-    private String menuName;
+    private String menuName; /** 메뉴 이름 **/
     
-    /** 메뉴 가격 **/
-    private int menuPrice;
+    private int menuPrice; /** 메뉴 가격 **/
     
-    /** 메뉴 칼로리 **/
-    private String menuCalorie;
+    private String menuCalorie; /** 메뉴 칼로리 **/
     
     
     public CafeMenu() {}
@@ -61,13 +57,9 @@ public class CafeMenu {
     public void setMenuCalorie(String menuCalorie) {
         this.menuCalorie = menuCalorie;
     }
-   public Object getCafeMenuName() {
+    // cafeMenunage 변수를ArrayList<String> CafeMenu로 하나 생성해서 return 으로 ArrayList<String>을 반환하도록 수정 부탁드립니다(신현민)
+    public Object getCafeMenuName() {
       return null;
-   }
-    
-    
-    
-    
-    
-    
+    }
+
 }

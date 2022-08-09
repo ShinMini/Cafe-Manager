@@ -21,8 +21,7 @@ public class Clients {
 	private String clientBirthday; /** 생일 **/
 	private String clientGrade; /** 고객 등급 **/
 
-	public Clients(String clientName, int clientAge, String clientEmail, String clientContact, String clientID,
-				   String clientPWD, String clientAdrres, char clientGender, String clientBirthday, String clientGrade) {
+	public Clients(String clientName, int clientAge, String clientEmail, String clientContact, String clientID, String clientPWD, String clientAdrres, char clientGender, String clientBirthday, String clientGrade) {
 		super();
 		this.clientName = clientName;
 		this.clientAge = clientAge;
@@ -36,7 +35,8 @@ public class Clients {
 		this.clientBirthday = clientBirthday;
 		this.clientGrade = clientGrade;
 	}
-​
+
+	public Clients() { }
 
 	@Override
 	public String toString() {
