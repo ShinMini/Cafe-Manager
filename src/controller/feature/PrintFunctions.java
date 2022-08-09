@@ -6,6 +6,7 @@ import java.util.Scanner;
 import controller.management.Login;
 import controller.management.SearchClient;
 import controller.management.SignIn;
+import model.Clients;
 
 public class PrintFunctions {
    public static Scanner sc = new Scanner(System.in);
@@ -52,8 +53,14 @@ public class PrintFunctions {
             break;
       }
    }
+   // 규리님이 완성해보셔용
+   public static void print_success_login(Clients client){
+      // 안녕
+      // select(client)~~
+      // sys.println(client.getClientNAme() 고객님 안ㄴ여하세요)
 
-   // user 1. '1' '1' 58 -'0' 57
+   }
+
    public static int OptionChecker(String case1_option) { // 정상적인 숫자가 아닌경우 -1반환
       char check_option = case1_option.charAt(0); // 문자열 첫번째 글자 가져옴
 

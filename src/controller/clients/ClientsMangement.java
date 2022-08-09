@@ -1,18 +1,14 @@
 package controller.clients;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import controller.management.Login;
 import controller.management.SearchClient;
 import controller.management.SignIn;
-import model.Clients;
 
 public class ClientsMangement {
     Scanner s = new Scanner(System.in);
-    ClientsSearchModel instance = ClientsSearchModel.getInstance();
-    ArrayList<Clients> allClientsList = instance.getClientsList();
 
     public void reqResClients(int reqNo) throws IOException {
         /**
