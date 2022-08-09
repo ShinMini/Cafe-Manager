@@ -19,10 +19,10 @@ public class PrintFunctions {
          System.out.println("## 해당 아이디값이 이미 존재합니다 \n\n##");
       }
       System.out.println("###############################");
-      System.out.println("### 1. 로그인 ###\n");
-      System.out.println("### 2. 회원가입 ###\n");
-      System.out.println("### 3. 아이디 비밀번호 찾기 ###\n");
-      System.out.println("### 4. 프로그램 종료 ###\n");
+      System.out.println("### 1. Login ###\n");
+      System.out.println("### 2. Sign up###\n");
+      System.out.println("### 3. find ID password ###\n");
+      System.out.println("### 4. Exit process ###\n");
       System.out.println("###############################");
 
       String input_option = sc.next();
@@ -40,7 +40,7 @@ public class PrintFunctions {
 
             break;
          case 3: // 아이디 비밀번호 찾기
-            SearchClient.FindID();
+            SearchClient.FindClients();
 
             break;
          case 4: // 프로그램 종료 화면 출력
