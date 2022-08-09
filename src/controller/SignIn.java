@@ -16,8 +16,9 @@ public class SignIn {
 
       System.out.println("### 회원가입###\n");
       instance_clients.setClientsID(Request_input("아이디"));
+      // instance_clients.setClientsID("유저가입력한 아이디");
 
-      if (SearchClient.SearchClientsID(instance_clients.getClientID()) == null) { // 중복임
+      if (SearchClient.SearchClientsID(instance_clients.getClientID()) != null) { // 중복임
          PrintFunctions.print_sginup_request(true); // 중복 표기 해준채 request print 함수 호출
          return;
       } else {
@@ -43,9 +44,10 @@ public class SignIn {
 
    }
 
-   public static String Request_input(String request_input) {
+   public static String Request_input(String request_input) {  // "아이디"
       String msg = "를 입력해주세요 : ";
       System.out.println(request_input + msg);
+
       String input = sc.nextLine();
 
       return input;

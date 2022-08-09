@@ -29,10 +29,11 @@ public class SearchClient {
       }
    }
 
-   public static Clients SearchClientsID(String clientID) {
+   // id가 중복된 경우 해당 client객체반환 중복되지않은경우 null값 반환
+   public static Clients SearchClientsID(String clientID) 환
       // file reader를 통해 회원정보가 들어있는 배열 가져온다 가정 -> ArrayList<Clients>
       try {
-         FileReader reader = new FileReader("C:\\Java_Mini_Project\\file.txt")
+         FileReader reader = new FileReader("C:\\Java_Mini_Project\\file.txt");
 
          int ch;
          while ((ch = reader.read()) != -1) {
@@ -42,8 +43,10 @@ public class SearchClient {
          System.err.println(e);
       }
       ArrayList<Clients> clientsInfo = new ArrayList<Clients>();
+
       Clients TempClient = null;
 
+      // 고객데이터를 가지고 검사를했을때 
       for (Clients client : clientsInfo) {
          if (client.getClientID().equals(clientID)) {
             TempClient = client;

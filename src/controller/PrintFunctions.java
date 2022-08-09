@@ -9,6 +9,7 @@ public class PrintFunctions {
    // 1번: 아이디 중복, 2번: 아이디가 중복되지 않은 경우. 3번 :
    public static void print_sginup_request(boolean id_overlapChecker) throws IOException { // 해당 아이디값이 이미 존재할 경우 호출되는 창
       ConsoleController.ClearScreen(); // 콘솔 clear
+
       if (id_overlapChecker) {
          System.out.println("## 해당 아이디값이 이미 존재합니다 \n\n##");
       }
@@ -16,7 +17,7 @@ public class PrintFunctions {
       System.out.println("### 1. 로그인 ###\n");
       System.out.println("### 2. 회원가입 ###\n");
       System.out.println("### 3. 아이디 비밀번호 찾기 ###\n");
-      System.out.println("### 3. 프로그램 종료 ###\n");
+      System.out.println("### 4. 프로그램 종료 ###\n");
       System.out.println("###############################");
 
       String input_option = sc.next();
@@ -48,6 +49,7 @@ public class PrintFunctions {
       }
    }
 
+   // user 1. '1' '1' 58 -'0' 57
    public static int OptionChecker(String case1_option) { // 정상적인 숫자가 아닌경우 -1반환
       char check_option = case1_option.charAt(0); // 문자열 첫번째 글자 가져옴
 
