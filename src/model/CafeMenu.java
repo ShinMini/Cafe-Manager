@@ -61,13 +61,9 @@ public class CafeMenu {
     public void setMenuCalorie(String menuCalorie) {
         this.menuCalorie = menuCalorie;
     }
-   public Object getCafeMenuName() {
+    // cafeMenunage 변수를ArrayList<String> CafeMenu로 하나 생성해서 return 으로 ArrayList<String>을 반환하도록 수정 부탁드립니다(신현민)
+    public Object getCafeMenuName() {
       return null;
    }
-    
-    
-    
-    
-    
-    
+
 }
